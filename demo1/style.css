@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+#previewText {
+  color: #555;
+  margin-top: 10px;
+}
