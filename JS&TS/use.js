@@ -1,0 +1,8 @@
+// use.js
+export default function sayHello(name) {
+  console.log(`Hello, ${name}!`);
+}
+export function sayGoodbye(name) {
+  console.log(`Goodbye, ${name}!`);
+}
+export const MAX_SIZE = 100;
