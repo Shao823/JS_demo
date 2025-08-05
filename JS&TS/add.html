@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>动态添加 &lt;li&gt; 元素示例</title>
+</head>
+<body>
+
+  <h2>动态往列表添加项目</h2>
+  <ul id="myList">
+    <li>已有项目A</li>
+    <li>已有项目B</li>
+  </ul>
+
+  <script>
+    // 创建一个新的 <li> 元素，内容为“新项目1”
+    let newItem1 = document.createElement("li");
+    newItem1.textContent = "新项目1";
+
+    // 获取 <ul> 元素
+    let list = document.getElementById("myList");
+
+    // 将新创建的 <li> 元素添加到 <ul> 的末尾
+    list.appendChild(newItem1);
+
+    // 创建另一个新的 <li> 元素，内容为“新项目2”
+    let newItem2 = document.createElement("li");
+    newItem2.textContent = "新项目2";
+
+    // 获取第一个 <li> 元素，注意用 firstElementChild 避免空白文本节点
+    let firstItem = list.firstElementChild;
+
+    // 将新创建的 <li> 元素插入到第一个 <li> 元素之前（即插入到列表开头）
+    list.insertBefore(newItem2, firstItem);
+  </script>
+
+</body>
+</html>
